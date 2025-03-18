@@ -1,19 +1,35 @@
 {
-	"name": "demo-mdxlite-sval",
-	"version": "0.0.0",
-	"private": true,
-	"scripts": {
-		"deploy": "wrangler deploy",
-		"dev": "wrangler dev",
-		"start": "wrangler dev",
-		"test": "vitest",
-		"cf-typegen": "wrangler types"
-	},
-	"devDependencies": {
-		"@cloudflare/vitest-pool-workers": "^0.7.5",
-		"@cloudflare/workers-types": "^4.20250317.0",
-		"typescript": "^5.5.2",
-		"vitest": "~3.0.7",
-		"wrangler": "^4.1.0"
-	}
+  "name": "demo-mdxlite-sval",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "start": "wrangler dev",
+    "test": "vitest",
+    "cf-typegen": "wrangler types"
+  },
+  "dependencies": {
+    "hast": "1.0.0",
+    "hast-util-to-jsx-runtime": "2.3.6",
+    "html-url-attributes": "3.0.1",
+    "react": "experimental",
+    "react-dom": "experimental",
+    "remark-mdx": "^3.1.0",
+    "remark-parse": "11.0.0",
+    "remark-rehype": "11.0.0",
+    "sval": "^0.6.3",
+    "unified": "11.0.5",
+    "unist-util-visit": "5.0.0",
+    "vfile": "6.0.3"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.7.5",
+    "@cloudflare/workers-types": "^4.20250317.0",
+    "@types/react": "^19.0.11",
+    "@types/react-dom": "^19.0.4",
+    "typescript": "^5.5.2",
+    "vitest": "~3.0.7",
+    "wrangler": "^4.1.0"
+  }
 }
