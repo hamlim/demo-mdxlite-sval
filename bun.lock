@@ -4,6 +4,7 @@
     "": {
       "name": "demo-mdxlite-sval",
       "dependencies": {
+        "estree-util-visit": "^2.0.0",
         "hast": "1.0.0",
         "hast-util-to-jsx-runtime": "2.3.6",
         "html-url-attributes": "3.0.1",

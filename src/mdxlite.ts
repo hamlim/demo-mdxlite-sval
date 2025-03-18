@@ -75,6 +75,8 @@ export type Options = {
   unwrapDisallowed?: boolean | null | undefined;
   /** Change URLs (default: `defaultUrlTransform`) */
   urlTransform?: UrlTransform | null | undefined;
+  /** Create an evaluater for expressions (default: `null`) */
+  createEvaluater?: (() => Evaluater) | null | undefined;
 };
 
 // STARTNEW
@@ -172,7 +174,7 @@ export function post(tree: Root, options: Options): ReactElement {
     passKeys: true,
     passNode: true,
     // STARTNEW
-    createEvaluater,
+    createEvaluater: createEvaluater || null,
     // ENDNEW
   });
 
